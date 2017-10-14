@@ -1,5 +1,5 @@
 {
-  "name": "lk-zeppelin-testing",
+  "name": "lk-test-helpers",
   "description": "Test helpers for smart contract development",
   "version": "0.1.0",
   "main": "main.js",
