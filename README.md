@@ -1,4 +1,4 @@
-# zeppelin-testing
+# lk-zeppelin-testing
 
 Test helpers for smart contract development
 
@@ -17,7 +17,7 @@ import {
   timer,
   toPromise,
   transactionMined
-} from 'zeppelin-testing'
+} from 'lk-zeppelin-testing'
 ```
 
 # Build
