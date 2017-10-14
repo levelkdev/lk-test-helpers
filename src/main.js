@@ -22,7 +22,7 @@ export default (web3) => {
     advanceToBlock: advanceToBlockProvider(web3),
     assertJump,
     ether,
-    latestTimeProvider: latestTimeProvider(web3),
+    latestTime: latestTimeProvider(web3),
     increaseTime: increaseTimeProvider(web3),
     increaseTimeTo: increaseTimeToProvider(web3),
     EVMThrow,

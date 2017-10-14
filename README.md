@@ -5,19 +5,23 @@ Test helpers for smart contract development
 ## Usage
 
 ```
-import {
+import lkTestHelpers from 'lk-test-helpers'
+
+const {
+  advanceBlock,
   advanceToBlock,
   assertJump,
   ether,
+  latestTime,
+  increaseTime,
+  increaseTimeTo,
   EVMThrow,
   expectThrow,
   hashMessage,
-  increaseTime,
-  latestTime,
   timer,
   toPromise,
   transactionMined
-} from 'lk-test-helpers'
+} = lkTestHelpers(web3)
 ```
 
 # Build
