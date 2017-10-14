@@ -10,11 +10,12 @@ const bundles = [
   {
     format: 'cjs',
     plugins: [],
-    babelPresets: [],
+    babelPresets: ['es2015-rollup'],
     babelPlugins: [
       'transform-es2015-destructuring',
       'transform-es2015-function-name',
-      'transform-es2015-parameters'
+      'transform-es2015-parameters',
+      'transform-async-to-generator'
     ]
   }
 ]
