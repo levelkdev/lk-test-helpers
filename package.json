@@ -14,7 +14,9 @@
   ],
   "dependencies": {
     "ethereumjs-util": "^5.1.2",
-    "moment": "^2.18.1"
+    "lk-web3-utils": "^0.1.0",
+    "moment": "^2.18.1",
+    "web3": "0.20.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

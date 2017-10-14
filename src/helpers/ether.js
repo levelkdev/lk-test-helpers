@@ -1,3 +1,5 @@
-export function ether(n) {
-  return new web3.BigNumber(web3.toWei(n, 'ether'))
+import { BigNumber, toWei } from 'lk-web3-utils'
+
+export default function ether(n) {
+  return new BigNumber(toWei(n, 'ether'))
 }

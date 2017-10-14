@@ -1,1 +1,1 @@
-export const EVMThrow = 'invalid opcode'
+export default 'invalid opcode'

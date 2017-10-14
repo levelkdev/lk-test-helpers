@@ -1,4 +1,4 @@
-export async function expectThrow (promise) {
+export default async function expectThrow (promise) {
   try {
     await promise;
   } catch (error) {
