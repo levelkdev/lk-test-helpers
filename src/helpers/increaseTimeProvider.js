@@ -44,6 +44,16 @@ export function increaseTimeToProvider (web3) {
   }
 }
 
+export function increaseTestrpcTimeProvider (web3) {
+  const increaseTime = increaseTimeProvider(web3)
+  const latestTime = latestTimeProvider(web3)
+  return async function increaseTestrpcTime(duration) {
+    await increaseTime(duration)
+    let _latestTime = await latestTime().unix()
+    return _latestTime
+  }
+}
+
 export const duration = {
   seconds: function(val) { return val},
   minutes: function(val) { return val * this.seconds(60) },
