@@ -8,15 +8,19 @@ Test helpers for smart contract development
 import lkTestHelpers from 'lk-test-helpers'
 
 const {
+  asyncReturnErr,
   advanceBlock,
   advanceToBlock,
   assertJump,
   ether,
+  EVMThrow,
+  expectEvent,
+  expectRevert,
+  expectThrow,
   latestTime,
+  increaseTestrpcTime,
   increaseTime,
   increaseTimeTo,
-  EVMThrow,
-  expectThrow,
   hashMessage,
   timer,
   toPromise,
