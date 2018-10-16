@@ -1,7 +1,7 @@
 {
   "name": "lk-test-helpers",
   "description": "Test helpers for smart contract development",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "main.js",
   "license": "MIT",
   "keywords": [
@@ -13,6 +13,8 @@
     "zeppelin"
   ],
   "dependencies": {
+    "chai": "^4.2.0",
+    "chai-bignumber": "^2.0.2",
     "ethereumjs-util": "^5.1.2",
     "lk-web3-utils": "^0.1.0",
     "moment": "^2.18.1",
