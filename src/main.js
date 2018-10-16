@@ -11,11 +11,9 @@ import {
   increaseTimeProvider,
   increaseTimeToProvider
 } from './helpers/increaseTimeProvider'
-import EVMThrow from './helpers/EVMThrow'
 import expectEvent from './helpers/expectEvent'
-import expectRevert from './helpers/expectRevert'
-import expectThrow from './helpers/expectThrow'
 import hashMessage from './helpers/hashMessage'
+import shouldFail from './helpers/shouldFail'
 import timerProvider from './helpers/timerProvider'
 import toPromise from './helpers/toPromise'
 import transactionMinedProvider from './helpers/transactionMinedProvider'
@@ -27,15 +25,13 @@ export default (web3) => {
     assertJump,
     asyncReturnErr,
     ether,
-    EVMThrow,
     expectEvent,
-    expectRevert,
-    expectThrow,
     latestTime: latestTimeProvider(web3),
     increaseTestrpcTime: increaseTestrpcTimeProvider(web3),
     increaseTime: increaseTimeProvider(web3),
     increaseTimeTo: increaseTimeToProvider(web3),
     hashMessage,
+    shouldFail,
     timer: timerProvider(web3),
     toPromise,
     transactionMined: transactionMinedProvider(web3)

@@ -13,6 +13,7 @@
     "zeppelin"
   ],
   "dependencies": {
+    "chai": "^4.2.0",
     "ethereumjs-util": "^5.1.2",
     "lk-web3-utils": "^0.1.0",
     "moment": "^2.18.1",
