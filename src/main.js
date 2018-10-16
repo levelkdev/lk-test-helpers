@@ -4,6 +4,7 @@ import {
 } from './helpers/advanceToBlockProvider'
 import assertJump from './helpers/assertJump'
 import asyncReturnErr from './helpers/asyncReturnErr'
+import constants from './helpers/constants'
 import ether from './helpers/ether'
 import latestTimeProvider from './helpers/latestTimeProvider'
 import {
@@ -24,6 +25,7 @@ export default (web3) => {
     advanceToBlock: advanceToBlockProvider(web3),
     assertJump,
     asyncReturnErr,
+    constants,
     ether,
     expectEvent,
     latestTime: latestTimeProvider(web3),
